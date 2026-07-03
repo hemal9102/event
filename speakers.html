@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta title suggestion: Speakers | Global Tech Summit 2027 -->
+    <!-- Meta description suggestion: Meet the 120+ industry leaders, innovators, and visionaries speaking at the Global Tech Summit. Filter by track: AI, Design, Cloud, and Web3. -->
+    <!-- Schema suggestion: ItemList schema containing Person schemas for all speakers -->
+    
+    <title>Speakers - Global Tech Summit 2027</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-speakers">
+    
+    <!-- Smooth Section Transition -->
+    
+    <!-- HEADER & NAVIGATION -->
+    <header class="site-header glass-nav" role="banner">
+        <!-- Reveal on Scroll -->
+        <nav class="main-nav container" aria-label="Main Navigation">
+            <a href="index.html" class="logo" aria-label="Global Tech Summit Home">
+                <span class="gradient-text-primary">TechSummit</span>
+            </a>
+            
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                <li role="none"><a href="about.html" role="menuitem">About Event</a></li>
+                <li role="none"><a href="speakers.html" role="menuitem" aria-current="page">Speakers</a></li>
+                <li role="none"><a href="schedule.html" role="menuitem">Schedule</a></li>
+                <li role="none"><a href="tickets.html" role="menuitem">Tickets</a></li>
+                <li role="none"><a href="sponsors.html" role="menuitem">Sponsors</a></li>
+                <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <a href="tickets.html" class="btn btn-primary shadow-soft">Get Tickets</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        
+        <!-- 1. INNER PAGE HERO SECTION -->
+        <section class="section-inner-hero bg-dark text-white py-xxxl relative overflow-hidden" aria-labelledby="speakers-hero-heading">
+            <!-- Parallax Background -->
+            <div class="hero-bg-blob absolute top-right w-96 h-96 bg-primary opacity-20 blur-heavy rounded-full mix-blend-screen" aria-hidden="true"></div>
+            <div class="hero-bg-blob absolute bottom-left w-96 h-96 bg-secondary opacity-20 blur-heavy rounded-full mix-blend-screen" aria-hidden="true"></div>
+            
+            <div class="container relative z-10 text-center max-w-lg mx-auto">
+                <!-- Fade Up -->
+                <nav aria-label="Breadcrumb" class="breadcrumb mb-md text-sm text-white-alpha">
+                    <ol class="flex justify-center gap-xs no-bullets">
+                        <li><a href="index.html" class="hover-text-white">Home</a></li>
+                        <li aria-hidden="true">/</li>
+                        <li aria-current="page" class="text-white">Speakers</li>
+                    </ol>
+                </nav>
+                
+                <h1 id="speakers-hero-heading" class="display-title mb-md">The <span class="gradient-text-primary">Visionaries</span></h1>
+                <p class="hero-subtitle text-xl text-white-alpha">
+                    Learn directly from the pioneers who are actively building the next generation of digital experiences, cloud infrastructure, and artificial intelligence.
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. FILTER / SEARCH UI (Structural HTML) -->
+        <section class="section-filters bg-alt py-md border-b border-subtle sticky top-nav z-40" aria-label="Filter Speakers">
+            <div class="container flex justify-between align-center flex-col-mobile gap-md">
+                <form class="search-form relative max-w-sm w-full" role="search" aria-label="Search speakers">
+                    <span class="icon-search absolute left-md top-half transform-translate-y-half text-muted" aria-hidden="true">🔍</span>
+                    <input type="search" id="speaker-search" class="form-input w-full pl-xl py-sm rounded-full bg-white border-subtle shadow-sm" placeholder="Search by name, company, or topic...">
+                    <label for="speaker-search" class="visually-hidden">Search speakers</label>
+                </form>
+                
+                <div class="filter-pills flex gap-sm overflow-x-auto no-scrollbar w-full-mobile">
+                    <button class="pill active bg-dark text-white px-md py-xs rounded-full text-sm font-medium whitespace-nowrap" aria-pressed="true">All Speakers</button>
+                    <button class="pill bg-white text-muted border-subtle px-md py-xs rounded-full text-sm font-medium hover-border-primary whitespace-nowrap" aria-pressed="false">Keynotes</button>
+                    <button class="pill bg-white text-muted border-subtle px-md py-xs rounded-full text-sm font-medium hover-border-primary whitespace-nowrap" aria-pressed="false">AI & ML</button>
+                    <button class="pill bg-white text-muted border-subtle px-md py-xs rounded-full text-sm font-medium hover-border-primary whitespace-nowrap" aria-pressed="false">Design</button>
+                    <button class="pill bg-white text-muted border-subtle px-md py-xs rounded-full text-sm font-medium hover-border-primary whitespace-nowrap" aria-pressed="false">Cloud</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. KEYNOTE SPEAKERS (Featured) -->
+        <section class="section-keynotes py-xxl" aria-labelledby="keynotes-heading">
+            <div class="container">
+                <!-- Fade Up -->
+                <div class="section-header text-center mb-xl">
+                    <span class="section-tag gradient-text-secondary">Main Stage</span>
+                    <h2 id="keynotes-heading" class="section-title h1">Keynote Headliners</h2>
+                </div>
+                
+                <!-- Stagger Cards -->
+                <div class="keynote-grid grid-2-col gap-xl">
+                    <!-- Keynote 1 -->
+                    <!-- Scale on Hover -->
+                    <article class="keynote-card flex bg-alt rounded-2xl overflow-hidden shadow-hover transition-all flex-col-mobile group">
+                        <div class="keynote-image w-half w-full-mobile relative aspect-ratio-4-5-mobile">
+                            <img src="https://i.pravatar.cc/300?u=speaker-1-large.jpg" alt="Sarah Jenkins" class="object-cover w-full h-full group-hover-zoom transition-slow" width="400" height="500" loading="lazy">
+                            <div class="absolute top-md left-md bg-primary text-white text-xs px-sm py-xs rounded uppercase font-bold tracking-wide shadow-sm">Opening Keynote</div>
+                        </div>
+                        <div class="keynote-info w-half w-full-mobile p-lg flex flex-col justify-center bg-white relative z-10">
+                            <h3 class="h3 mb-xs">Sarah Jenkins</h3>
+                            <p class="text-primary font-medium mb-md">VP of Engineering at TechFlow</p>
+                            <p class="text-muted text-sm mb-lg">
+                                Sarah leads a team of 400+ engineers building distributed systems. She will open the summit discussing the practical challenges and solutions of scaling AI infrastructure globally.
+                            </p>
+                            <div class="speaker-session glass-panel bg-alt p-md rounded-lg mb-md border-l-primary">
+                                <h4 class="text-sm font-bold mb-xs">Session:</h4>
+                                <a href="schedule.html#session-1" class="text-sm link-dark hover-text-primary">Beyond the Hype: Scaling LLMs in Production &rarr;</a>
+                            </div>
+                            <div class="social-links mt-auto">
+                                <a href="#" aria-label="LinkedIn" class="text-muted hover-text-primary mr-sm"><span aria-hidden="true">in</span></a>
+                                <a href="#" aria-label="Twitter" class="text-muted hover-text-primary"><span aria-hidden="true">𝕏</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Keynote 2 -->
+                    <!-- Scale on Hover -->
+                    <article class="keynote-card flex bg-alt rounded-2xl overflow-hidden shadow-hover transition-all flex-col-mobile group">
+                        <div class="keynote-image w-half w-full-mobile relative aspect-ratio-4-5-mobile">
+                            <img src="https://i.pravatar.cc/300?u=speaker-2-large.jpg" alt="David Chen" class="object-cover w-full h-full group-hover-zoom transition-slow" width="400" height="500" loading="lazy">
+                            <div class="absolute top-md left-md bg-secondary text-white text-xs px-sm py-xs rounded uppercase font-bold tracking-wide shadow-sm">Closing Keynote</div>
+                        </div>
+                        <div class="keynote-info w-half w-full-mobile p-lg flex flex-col justify-center bg-white relative z-10">
+                            <h3 class="h3 mb-xs">David Chen</h3>
+                            <p class="text-secondary font-medium mb-md">Founder & CEO, Innovate AI</p>
+                            <p class="text-muted text-sm mb-lg">
+                                Former lead researcher at DeepMind, David founded Innovate AI to democratize machine learning tools for indie developers and small startups.
+                            </p>
+                            <div class="speaker-session glass-panel bg-alt p-md rounded-lg mb-md border-l-secondary">
+                                <h4 class="text-sm font-bold mb-xs">Session:</h4>
+                                <a href="schedule.html#session-99" class="text-sm link-dark hover-text-secondary">The Next Decade of Human-Computer Symbiosis &rarr;</a>
+                            </div>
+                            <div class="social-links mt-auto">
+                                <a href="#" aria-label="LinkedIn" class="text-muted hover-text-secondary mr-sm"><span aria-hidden="true">in</span></a>
+                                <a href="#" aria-label="Website" class="text-muted hover-text-secondary"><span aria-hidden="true">🌐</span></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. ALL SPEAKERS GRID -->
+        <section class="section-all-speakers py-xxl bg-alt" aria-labelledby="all-speakers-heading">
+            <div class="container">
+                <!-- Fade Up -->
+                <div class="section-header text-center mb-xl">
+                    <h2 id="all-speakers-heading" class="section-title h2">Industry Experts</h2>
+                    <p class="text-muted">Masterclass instructors, panelists, and breakout session leaders.</p>
+                </div>
+
+                <!-- Stagger Cards -->
+                <div class="speakers-grid grid-4-col gap-lg">
+                    
+                    <!-- Speaker Card 1 -->
+                    <!-- Reveal on Scroll -->
+                    <article class="speaker-card group glass-panel rounded-xl overflow-hidden shadow-sm shadow-hover">
+                        <div class="speaker-image-wrapper aspect-ratio-1-1 overflow-hidden relative">
+                            <!-- Image Zoom -->
+                            <img src="https://i.pravatar.cc/300?u=speaker-3.jpg" alt="Elena Rodriguez" class="object-cover w-full h-full group-hover-zoom transition-slow" width="300" height="300" loading="lazy">
+                            <div class="absolute bottom-sm right-sm flex gap-xs">
+                                <span class="badge bg-white text-dark text-xs px-xs py-xxs rounded shadow-sm font-medium">Design</span>
+                            </div>
+                        </div>
+                        <div class="speaker-info p-md bg-white">
+                            <h3 class="speaker-name h5 mb-xs">Elena Rodriguez</h3>
+                            <p class="speaker-title text-sm text-muted mb-sm">Head of Design, Acme Corp</p>
+                            <a href="schedule.html#session-3" class="text-xs link-primary font-medium flex align-center gap-xs">View Session <span aria-hidden="true">&rarr;</span></a>
+                        </div>
+                    </article>
+
+                    <!-- Speaker Card 2 -->
+                    <!-- Reveal on Scroll -->
+                    <article class="speaker-card group glass-panel rounded-xl overflow-hidden shadow-sm shadow-hover">
+                        <div class="speaker-image-wrapper aspect-ratio-1-1 overflow-hidden relative">
+                            <!-- Image Zoom -->
+                            <img src="https://i.pravatar.cc/300?u=speaker-4.jpg" alt="Marcus Johnson" class="object-cover w-full h-full group-hover-zoom transition-slow" width="300" height="300" loading="lazy">
+                            <div class="absolute bottom-sm right-sm flex gap-xs">
+                                <span class="badge bg-white text-dark text-xs px-xs py-xxs rounded shadow-sm font-medium">Cloud</span>
+                            </div>
+                        </div>
+                        <div class="speaker-info p-md bg-white">
+                            <h3 class="speaker-name h5 mb-xs">Marcus Johnson</h3>
+                            <p class="speaker-title text-sm text-muted mb-sm">CSO, Nexus Systems</p>
+                            <a href="schedule.html#session-4" class="text-xs link-primary font-medium flex align-center gap-xs">View Session <span aria-hidden="true">&rarr;</span></a>
+                        </div>
+                    </article>
+
+                    <!-- Speaker Card 3 -->
+                    <!-- Reveal on Scroll -->
+                    <article class="speaker-card group glass-panel rounded-xl overflow-hidden shadow-sm shadow-hover">
+                        <div class="speaker-image-wrapper aspect-ratio-1-1 overflow-hidden relative">
+                            <!-- Image Zoom -->
+                            <img src="https://i.pravatar.cc/300?u=speaker-5.jpg" alt="Anita Sharma" class="object-cover w-full h-full group-hover-zoom transition-slow" width="300" height="300" loading="lazy">
+                            <div class="absolute bottom-sm right-sm flex gap-xs">
+                                <span class="badge bg-white text-dark text-xs px-xs py-xxs rounded shadow-sm font-medium">AI & ML</span>
+                            </div>
+                        </div>
+                        <div class="speaker-info p-md bg-white">
+                            <h3 class="speaker-name h5 mb-xs">Anita Sharma</h3>
+                            <p class="speaker-title text-sm text-muted mb-sm">Senior Data Scientist, Quantum</p>
+                            <a href="schedule.html#session-5" class="text-xs link-primary font-medium flex align-center gap-xs">View Session <span aria-hidden="true">&rarr;</span></a>
+                        </div>
+                    </article>
+
+                    <!-- Speaker Card 4 -->
+                    <!-- Reveal on Scroll -->
+                    <article class="speaker-card group glass-panel rounded-xl overflow-hidden shadow-sm shadow-hover">
+                        <div class="speaker-image-wrapper aspect-ratio-1-1 overflow-hidden relative">
+                            <!-- Image Zoom -->
+                            <img src="https://i.pravatar.cc/300?u=speaker-6.jpg" alt="Thomas Keller" class="object-cover w-full h-full group-hover-zoom transition-slow" width="300" height="300" loading="lazy">
+                            <div class="absolute bottom-sm right-sm flex gap-xs">
+                                <span class="badge bg-white text-dark text-xs px-xs py-xxs rounded shadow-sm font-medium">Web3</span>
+                            </div>
+                        </div>
+                        <div class="speaker-info p-md bg-white">
+                            <h3 class="speaker-name h5 mb-xs">Thomas Keller</h3>
+                            <p class="speaker-title text-sm text-muted mb-sm">Co-founder, ChainLinker</p>
+                            <a href="schedule.html#session-6" class="text-xs link-primary font-medium flex align-center gap-xs">View Session <span aria-hidden="true">&rarr;</span></a>
+                        </div>
+                    </article>
+
+                    <!-- Speaker Card 5 -->
+                    <!-- Reveal on Scroll -->
+                    <article class="speaker-card group glass-panel rounded-xl overflow-hidden shadow-sm shadow-hover">
+                        <div class="speaker-image-wrapper aspect-ratio-1-1 overflow-hidden relative">
+                            <!-- Image Zoom -->
+                            <img src="https://i.pravatar.cc/300?u=speaker-7.jpg" alt="Dr. Maya Lin" class="object-cover w-full h-full group-hover-zoom transition-slow" width="300" height="300" loading="lazy">
+                            <div class="absolute bottom-sm right-sm flex gap-xs">
+                                <span class="badge bg-white text-dark text-xs px-xs py-xxs rounded shadow-sm font-medium">Design</span>
+                            </div>
+                        </div>
+                        <div class="speaker-info p-md bg-white">
+                            <h3 class="speaker-name h5 mb-xs">Dr. Maya Lin</h3>
+                            <p class="speaker-title text-sm text-muted mb-sm">Accessibility Lead, Global UI</p>
+                            <a href="schedule.html#session-7" class="text-xs link-primary font-medium flex align-center gap-xs">View Session <span aria-hidden="true">&rarr;</span></a>
+                        </div>
+                    </article>
+
+                    <!-- Speaker Card 6 -->
+                    <!-- Reveal on Scroll -->
+                    <article class="speaker-card group glass-panel rounded-xl overflow-hidden shadow-sm shadow-hover">
+                        <div class="speaker-image-wrapper aspect-ratio-1-1 overflow-hidden relative">
+                            <!-- Image Zoom -->
+                            <img src="https://i.pravatar.cc/300?u=speaker-8.jpg" alt="James O'Connor" class="object-cover w-full h-full group-hover-zoom transition-slow" width="300" height="300" loading="lazy">
+                            <div class="absolute bottom-sm right-sm flex gap-xs">
+                                <span class="badge bg-white text-dark text-xs px-xs py-xxs rounded shadow-sm font-medium">Cloud</span>
+                            </div>
+                        </div>
+                        <div class="speaker-info p-md bg-white">
+                            <h3 class="speaker-name h5 mb-xs">James O'Connor</h3>
+                            <p class="speaker-title text-sm text-muted mb-sm">DevOps Architect, Serverless</p>
+                            <a href="schedule.html#session-8" class="text-xs link-primary font-medium flex align-center gap-xs">View Session <span aria-hidden="true">&rarr;</span></a>
+                        </div>
+                    </article>
+
+                    <!-- Speaker Card 7 -->
+                    <!-- Reveal on Scroll -->
+                    <article class="speaker-card group glass-panel rounded-xl overflow-hidden shadow-sm shadow-hover">
+                        <div class="speaker-image-wrapper aspect-ratio-1-1 overflow-hidden relative">
+                            <!-- Image Zoom -->
+                            <img src="https://i.pravatar.cc/300?u=speaker-9.jpg" alt="Fatima Zahra" class="object-cover w-full h-full group-hover-zoom transition-slow" width="300" height="300" loading="lazy">
+                            <div class="absolute bottom-sm right-sm flex gap-xs">
+                                <span class="badge bg-white text-dark text-xs px-xs py-xxs rounded shadow-sm font-medium">Startup</span>
+                            </div>
+                        </div>
+                        <div class="speaker-info p-md bg-white">
+                            <h3 class="speaker-name h5 mb-xs">Fatima Zahra</h3>
+                            <p class="speaker-title text-sm text-muted mb-sm">Partner, Early Stage VC</p>
+                            <a href="schedule.html#session-9" class="text-xs link-primary font-medium flex align-center gap-xs">View Session <span aria-hidden="true">&rarr;</span></a>
+                        </div>
+                    </article>
+
+                    <!-- Placeholder for More Speakers (Button) -->
+                    <article class="speaker-card glass-panel rounded-xl flex align-center justify-center border-dashed border-subtle min-h-300">
+                        <div class="text-center p-lg">
+                            <span class="display-medium text-muted opacity-30 mb-sm block">+110</span>
+                            <h3 class="h6 text-muted mb-md">More incredible speakers</h3>
+                            <button class="btn btn-outline btn-sm">Load More</button>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. CALL FOR SPEAKERS -->
+        <section class="section-cfs py-xxxl bg-dark text-white relative overflow-hidden" aria-labelledby="cfs-heading">
+            <!-- Parallax Background -->
+            <div class="hero-bg-image absolute inset-0 opacity-10">
+                <img src="https://picsum.photos/seed/stage-audience.jpg/800/600" alt="" class="object-cover w-full h-full" aria-hidden="true">
+            </div>
+            <div class="container relative z-10 grid-2-col gap-xxl align-center">
+                <div class="cfs-content">
+                    <!-- Fade Up -->
+                    <span class="section-tag gradient-text-secondary">Join The Lineup</span>
+                    <h2 id="cfs-heading" class="section-title h1 mb-md">Have a Story to Share?</h2>
+                    <p class="text-large text-white-alpha mb-lg">
+                        We are always looking for fresh perspectives, unique case studies, and passionate voices. If you're working on something that pushes the boundaries of tech, we want you on our stage.
+                    </p>
+                    <ul class="cfs-benefits no-bullets space-y-sm mb-xl text-white-alpha">
+                        <li class="flex align-center gap-sm"><span class="text-secondary" aria-hidden="true">✓</span> All travel and premium accommodation covered</li>
+                        <li class="flex align-center gap-sm"><span class="text-secondary" aria-hidden="true">✓</span> VIP access to all event areas and after-parties</li>
+                        <li class="flex align-center gap-sm"><span class="text-secondary" aria-hidden="true">✓</span> Professional media kit (photos and video recording)</li>
+                    </ul>
+                    <a href="apply-speaker.html" class="btn btn-secondary btn-large">Submit Speaker Proposal</a>
+                </div>
+                
+                <div class="cfs-visual">
+                    <!-- Floating Element -->
+                    <div class="glass-card-dark p-lg rounded-2xl border-subtle relative shadow-heavy">
+                        <div class="quote-icon absolute top-md left-md text-white-alpha opacity-10 display-large leading-none">"</div>
+                        <p class="text-lg italic mb-lg relative z-10 pt-md">
+                            "Speaking at TechSummit completely changed the trajectory of our startup. The audience engagement was incredible, and the networking in the green room was invaluable."
+                        </p>
+                        <div class="flex align-center gap-md">
+                            <img src="https://i.pravatar.cc/300?u=avatar-4.jpg" alt="" class="rounded-full w-12 h-12 border-primary border-2" width="48" height="48" loading="lazy">
+                            <div>
+                                <h4 class="h6 mb-none">Alex Rivera</h4>
+                                <span class="text-xs text-white-alpha">2026 Keynote Speaker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. SPEAKERS FAQ -->
+        <section class="section-faq py-xxl" aria-labelledby="faq-heading">
+            <div class="container max-w-lg mx-auto">
+                <!-- Fade Up -->
+                <div class="section-header text-center mb-xl">
+                    <h2 id="faq-heading" class="section-title h2">Speaker FAQs</h2>
+                </div>
+                
+                <!-- Reveal on Scroll -->
+                <div class="faq-accordion space-y-sm">
+                    <details class="faq-item glass-panel rounded-lg shadow-sm group">
+                        <summary class="faq-question h5 p-md cursor-pointer flex justify-between align-center font-medium">
+                            When is the deadline to apply?
+                            <span class="icon-plus group-open:rotate-45 transition-transform" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="faq-answer p-md pt-none text-muted">
+                            <p>The Call for Speakers for the 2027 Summit closes on July 1st, 2027. We review applications on a rolling basis, so we encourage early submissions.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item glass-panel rounded-lg shadow-sm group">
+                        <summary class="faq-question h5 p-md cursor-pointer flex justify-between align-center font-medium">
+                            What session formats are available?
+                            <span class="icon-plus group-open:rotate-45 transition-transform" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="faq-answer p-md pt-none text-muted">
+                            <p>We offer three formats: 20-minute lightning talks, 45-minute deep-dive presentations, and 90-minute interactive masterclasses. You can select your preferred format in the application.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item glass-panel rounded-lg shadow-sm group">
+                        <summary class="faq-question h5 p-md cursor-pointer flex justify-between align-center font-medium">
+                            Do I need past speaking experience?
+                            <span class="icon-plus group-open:rotate-45 transition-transform" aria-hidden="true">+</span>
+                        </summary>
+                        <div class="faq-answer p-md pt-none text-muted">
+                            <p>Not necessarily! While experience helps for main stage keynotes, we have dedicated tracks for first-time speakers and offer mentorship programs to help you prepare your talk.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER (Reused) -->
+    <footer class="site-footer bg-dark text-white-alpha py-xl" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid grid-4-col gap-xl mb-xl">
+                <div class="footer-brand col-span-2-mobile">
+                    <a href="index.html" class="logo mb-md inline-block">
+                        <span class="gradient-text-primary h4 font-bold text-white">TechSummit</span>
+                    </a>
+                    <p class="text-sm mb-md max-w-xs">
+                        The premier gathering for tech innovators, designers, and founders to shape the future of the digital world.
+                    </p>
+                    <div class="social-links flex gap-md">
+                        <a href="#" aria-label="Twitter" class="hover-text-white transition-colors">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"></path></svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" class="hover-text-white transition-colors">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="hover-text-white transition-colors">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="text-white mb-md font-medium">Explore</h4>
+                    <ul class="no-bullets space-y-sm text-sm">
+                        <li><a href="about.html" class="hover-text-primary transition-colors">About</a></li>
+                        <li><a href="speakers.html" class="hover-text-primary transition-colors">Speakers</a></li>
+                        <li><a href="schedule.html" class="hover-text-primary transition-colors">Schedule</a></li>
+                        <li><a href="sponsors.html" class="hover-text-primary transition-colors">Sponsors</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="text-white mb-md font-medium">Support</h4>
+                    <ul class="no-bullets space-y-sm text-sm">
+                        <li><a href="faq.html" class="hover-text-primary transition-colors">FAQ</a></li>
+                        <li><a href="contact.html" class="hover-text-primary transition-colors">Contact Us</a></li>
+                        <li><a href="code-of-conduct.html" class="hover-text-primary transition-colors">Code of Conduct</a></li>
+                        <li><a href="accessibility.html" class="hover-text-primary transition-colors">Accessibility</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="text-white mb-md font-medium">Legal</h4>
+                    <ul class="no-bullets space-y-sm text-sm">
+                        <li><a href="privacy.html" class="hover-text-primary transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover-text-primary transition-colors">Terms of Service</a></li>
+                        <li><a href="cookies.html" class="hover-text-primary transition-colors">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom border-t border-dark-lighter pt-lg flex justify-between align-center text-xs flex-col-mobile gap-sm text-center-mobile">
+                <p>&copy; <time datetime="2027">2027</time> Global Tech Summit. All rights reserved.</p>
+                <p>Designed by <a href="https://hemalshah.vercel.app" target="_blank" rel="noopener noreferrer" class="hover-text-primary transition-colors font-bold">Hemal Shah</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js" defer></script>
+</body>
+</html>

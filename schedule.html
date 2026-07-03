@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta title suggestion: Event Schedule | Global Tech Summit 2027 -->
+    <!-- Meta description suggestion: Plan your three days at the Global Tech Summit. View the full agenda, including keynotes, workshops, and networking sessions. -->
+    <!-- Schema suggestion: Event schema with subEvents for each schedule item -->
+    
+    <title>Schedule & Agenda - Global Tech Summit 2027</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-schedule">
+    
+    <!-- Smooth Section Transition -->
+    
+    <!-- HEADER & NAVIGATION -->
+    <header class="site-header glass-nav" role="banner">
+        <!-- Reveal on Scroll -->
+        <nav class="main-nav container" aria-label="Main Navigation">
+            <a href="index.html" class="logo" aria-label="Global Tech Summit Home">
+                <span class="gradient-text-primary">TechSummit</span>
+            </a>
+            
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                <li role="none"><a href="about.html" role="menuitem">About Event</a></li>
+                <li role="none"><a href="speakers.html" role="menuitem">Speakers</a></li>
+                <li role="none"><a href="schedule.html" role="menuitem" aria-current="page">Schedule</a></li>
+                <li role="none"><a href="tickets.html" role="menuitem">Tickets</a></li>
+                <li role="none"><a href="sponsors.html" role="menuitem">Sponsors</a></li>
+                <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <a href="tickets.html" class="btn btn-primary shadow-soft">Get Tickets</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        
+        <!-- 1. INNER PAGE HERO SECTION -->
+        <section class="section-inner-hero bg-dark text-white py-xxxl relative overflow-hidden" aria-labelledby="schedule-hero-heading">
+            <div class="container relative z-10 text-center max-w-lg mx-auto">
+                <!-- Fade Up -->
+                <nav aria-label="Breadcrumb" class="breadcrumb mb-md text-sm text-white-alpha">
+                    <ol class="flex justify-center gap-xs no-bullets">
+                        <li><a href="index.html" class="hover-text-white">Home</a></li>
+                        <li aria-hidden="true">/</li>
+                        <li aria-current="page" class="text-white">Schedule</li>
+                    </ol>
+                </nav>
+                
+                <h1 id="schedule-hero-heading" class="display-title mb-md">The <span class="gradient-text-secondary">Agenda</span></h1>
+                <p class="hero-subtitle text-xl text-white-alpha">
+                    Three packed days of keynotes, masterclasses, and interactive panels designed to elevate your technical expertise.
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. DATE TABS & FILTERS -->
+        <section class="section-schedule-controls bg-alt py-md border-b border-subtle sticky top-nav z-40" aria-label="Schedule Controls">
+            <div class="container flex justify-between align-center flex-col-mobile gap-md">
+                
+                <div class="date-tabs flex bg-white p-xs rounded-lg shadow-sm border-subtle">
+                    <button class="tab-btn active px-lg py-sm rounded-md font-bold bg-dark text-white" aria-pressed="true">
+                        <span class="block text-sm">Day 1</span>
+                        <span class="block text-xs font-normal opacity-70">Oct 15</span>
+                    </button>
+                    <button class="tab-btn px-lg py-sm rounded-md font-bold text-muted hover-bg-alt" aria-pressed="false">
+                        <span class="block text-sm">Day 2</span>
+                        <span class="block text-xs font-normal opacity-70">Oct 16</span>
+                    </button>
+                    <button class="tab-btn px-lg py-sm rounded-md font-bold text-muted hover-bg-alt" aria-pressed="false">
+                        <span class="block text-sm">Day 3</span>
+                        <span class="block text-xs font-normal opacity-70">Oct 17</span>
+                    </button>
+                </div>
+                
+                <div class="filter-dropdowns flex gap-sm">
+                    <select class="form-select bg-white border-subtle rounded-md px-md py-sm text-sm" aria-label="Filter by Track">
+                        <option value="all">All Tracks</option>
+                        <option value="ai">AI & Machine Learning</option>
+                        <option value="design">Design & UX</option>
+                        <option value="cloud">Cloud Architecture</option>
+                        <option value="web3">Web3</option>
+                    </select>
+                    <select class="form-select bg-white border-subtle rounded-md px-md py-sm text-sm" aria-label="Filter by Format">
+                        <option value="all">All Formats</option>
+                        <option value="keynote">Keynotes</option>
+                        <option value="workshop">Workshops</option>
+                        <option value="panel">Panels</option>
+                        <option value="networking">Networking</option>
+                    </select>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- 3. TIMELINE / SCHEDULE ITEMS -->
+        <section class="section-timeline py-xxl" aria-label="Day 1 Schedule">
+            <div class="container max-w-xl mx-auto">
+                
+                <!-- Morning Block -->
+                <div class="time-block flex gap-xl mb-xl relative">
+                    <div class="time-label w-24 flex-shrink-0 text-right pt-sm border-r border-subtle pr-md">
+                        <span class="h4 gradient-text-primary block">09:00</span>
+                        <span class="text-xs text-muted uppercase">AM</span>
+                    </div>
+                    
+                    <div class="sessions-container w-full space-y-md">
+                        <!-- Reveal on Scroll -->
+                        <article id="session-1" class="session-card glass-panel rounded-xl p-lg border-l-primary shadow-sm hover-shadow-md transition-all">
+                            <div class="flex justify-between align-start mb-sm">
+                                <span class="badge bg-primary-light text-primary text-xs px-sm py-xs rounded uppercase font-bold tracking-wide">Keynote</span>
+                                <span class="text-xs text-muted font-medium flex align-center gap-xs"><span aria-hidden="true">📍</span> Main Stage A</span>
+                            </div>
+                            <h3 class="h4 mb-sm">Beyond the Hype: Scaling LLMs in Production</h3>
+                            <p class="text-muted text-sm mb-md">An in-depth look at the infrastructure required to serve massive language models with low latency and high reliability.</p>
+                            
+                            <div class="speaker-meta flex align-center gap-md border-t border-subtle pt-md mt-md">
+                                <img src="https://i.pravatar.cc/300?u=speaker-1.jpg" alt="" class="rounded-full w-10 h-10 border-primary border" width="40" height="40" loading="lazy">
+                                <div>
+                                    <h4 class="h6 mb-none"><a href="speakers.html" class="link-dark hover-text-primary">Sarah Jenkins</a></h4>
+                                    <span class="text-xs text-muted">VP of Engineering, TechFlow</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Mid-Morning Block (Parallel Sessions) -->
+                <div class="time-block flex gap-xl mb-xl relative">
+                    <div class="time-label w-24 flex-shrink-0 text-right pt-sm border-r border-subtle pr-md">
+                        <span class="h4 text-dark block">10:30</span>
+                        <span class="text-xs text-muted uppercase">AM</span>
+                    </div>
+                    
+                    <div class="sessions-container w-full grid-2-col gap-md">
+                        <!-- Reveal on Scroll -->
+                        <article id="session-2" class="session-card glass-panel rounded-xl p-lg border-l-secondary shadow-sm hover-shadow-md transition-all h-full flex flex-col">
+                            <div class="flex justify-between align-start mb-sm">
+                                <span class="badge bg-secondary-light text-secondary text-xs px-sm py-xs rounded uppercase font-bold tracking-wide">Workshop</span>
+                                <span class="text-xs text-muted font-medium flex align-center gap-xs"><span aria-hidden="true">📍</span> Room 204</span>
+                            </div>
+                            <h3 class="h5 mb-sm">Building Accessible Design Systems</h3>
+                            <p class="text-muted text-sm mb-md flex-1">Hands-on workshop using React and Tailwind to build WCAG 2.1 AA compliant components.</p>
+                            
+                            <div class="speaker-meta flex align-center gap-md border-t border-subtle pt-md mt-auto">
+                                <img src="https://i.pravatar.cc/300?u=speaker-3.jpg" alt="" class="rounded-full w-8 h-8" width="32" height="32" loading="lazy">
+                                <div>
+                                    <h4 class="text-sm font-bold mb-none">Elena Rodriguez</h4>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Reveal on Scroll -->
+                        <article id="session-3" class="session-card glass-panel rounded-xl p-lg border-l-accent shadow-sm hover-shadow-md transition-all h-full flex flex-col">
+                            <div class="flex justify-between align-start mb-sm">
+                                <span class="badge bg-accent-light text-accent text-xs px-sm py-xs rounded uppercase font-bold tracking-wide">Panel</span>
+                                <span class="text-xs text-muted font-medium flex align-center gap-xs"><span aria-hidden="true">📍</span> Stage B</span>
+                            </div>
+                            <h3 class="h5 mb-sm">The Future of Serverless Architecture</h3>
+                            <p class="text-muted text-sm mb-md flex-1">Debating vendor lock-in, cold starts, and cost optimization at scale.</p>
+                            
+                            <div class="speaker-meta flex align-center gap-md border-t border-subtle pt-md mt-auto">
+                                <div class="avatar-group flex -space-x-sm">
+                                    <img src="https://i.pravatar.cc/300?u=speaker-4.jpg" alt="" class="rounded-full w-8 h-8 border-2 border-white" width="32" height="32" loading="lazy">
+                                    <img src="https://i.pravatar.cc/300?u=speaker-8.jpg" alt="" class="rounded-full w-8 h-8 border-2 border-white" width="32" height="32" loading="lazy">
+                                </div>
+                                <h4 class="text-xs font-medium text-muted">Marcus J. & James O.</h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+                <!-- Lunch Break -->
+                <div class="time-block flex gap-xl mb-xl relative">
+                    <div class="time-label w-24 flex-shrink-0 text-right pt-sm border-r border-subtle pr-md">
+                        <span class="h4 text-muted block">12:30</span>
+                        <span class="text-xs text-muted uppercase">PM</span>
+                    </div>
+                    
+                    <div class="sessions-container w-full">
+                        <div class="bg-alt border-dashed border-subtle rounded-xl p-md text-center">
+                            <span class="text-xl mb-xs block" aria-hidden="true">🍽️</span>
+                            <h3 class="h6 text-muted">Networking Lunch Break</h3>
+                            <p class="text-xs text-muted mt-xs">Main Exhibition Hall</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Afternoon Block -->
+                <div class="time-block flex gap-xl mb-xl relative">
+                    <div class="time-label w-24 flex-shrink-0 text-right pt-sm border-r border-subtle pr-md">
+                        <span class="h4 text-dark block">02:00</span>
+                        <span class="text-xs text-muted uppercase">PM</span>
+                    </div>
+                    
+                    <div class="sessions-container w-full space-y-md">
+                        <!-- Reveal on Scroll -->
+                        <article id="session-4" class="session-card glass-panel rounded-xl p-lg border-l-dark shadow-sm hover-shadow-md transition-all">
+                            <div class="flex justify-between align-start mb-sm">
+                                <span class="badge bg-dark text-white text-xs px-sm py-xs rounded uppercase font-bold tracking-wide">Masterclass</span>
+                                <span class="text-xs text-muted font-medium flex align-center gap-xs"><span aria-hidden="true">📍</span> Auditorium C</span>
+                            </div>
+                            <h3 class="h4 mb-sm">Zero-Knowledge Proofs in Web3</h3>
+                            <p class="text-muted text-sm mb-md">Understanding the cryptographic foundations and practical implementations for privacy-preserving applications.</p>
+                            
+                            <div class="speaker-meta flex align-center gap-md border-t border-subtle pt-md mt-md">
+                                <img src="https://i.pravatar.cc/300?u=speaker-6.jpg" alt="" class="rounded-full w-10 h-10 border-dark border" width="40" height="40" loading="lazy">
+                                <div>
+                                    <h4 class="h6 mb-none">Thomas Keller</h4>
+                                    <span class="text-xs text-muted">Co-founder, ChainLinker</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. DOWNLOAD SCHEDULE CTA -->
+        <section class="section-download-cta py-xl bg-gradient-primary text-white text-center">
+            <div class="container">
+                <!-- Fade Up -->
+                <h2 class="h3 mb-sm">Take the Schedule Offline</h2>
+                <p class="text-white-alpha mb-md">Download the full PDF agenda including venue maps and session abstracts.</p>
+                <a href="#" class="btn btn-secondary btn-icon-left shadow-md">
+                    <span aria-hidden="true">📄</span> Download PDF Agenda
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER (Reused) -->
+    <footer class="site-footer bg-dark text-white-alpha py-xl" role="contentinfo">
+        <!-- Footer Content identical to other pages -->
+        <div class="container">
+            <div class="footer-grid grid-4-col gap-xl mb-xl">
+                <div class="footer-brand col-span-2-mobile">
+                    <a href="index.html" class="logo mb-md inline-block">
+                        <span class="gradient-text-primary h4 font-bold text-white">TechSummit</span>
+                    </a>
+                    <p class="text-sm mb-md max-w-xs">
+                        The premier gathering for tech innovators, designers, and founders to shape the future of the digital world.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4 class="text-white mb-md font-medium">Explore</h4>
+                    <ul class="no-bullets space-y-sm text-sm">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="speakers.html">Speakers</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="sponsors.html">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom border-t border-dark-lighter pt-lg text-center text-xs">
+                <p>&copy; <time datetime="2027">2027</time> Global Tech Summit. All rights reserved.</p>
+            
+                <p>Designed by <a href="https://hemalshah.vercel.app" target="_blank" rel="noopener noreferrer" class="hover-text-primary transition-colors font-bold" style="color: #6366f1;">Hemal Shah</a></p></div>
+        </div>
+    </footer>
+    <script src="main.js" defer></script>
+</body>
+</html>
